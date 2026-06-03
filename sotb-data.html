@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Data Analysis — SotB Research</title>
+  <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="section-header">
+    <div class="container">
+      <h1>Data Processing & Spectral Fingerprinting</h1>
+      <p class="muted">How we decode molecular structures using X-ray Absorption Near-Edge Structure (XANES).</p>
+    </div>
+  </section>
+  <main class="container section-page">
+    <div class="section-content" style="display:block;">
+      <h2>Understanding the Chlorine K-edge Spectrum</h2>
+      <p>When our biochar samples are placed inside the synchrotron experimental chamber, we shoot soft X-ray light at them, stepping the energy from roughly 2.81 keV up through 2.85 keV. As the energy hits the binding threshold of core Chlorine electrons, a sharp jump in absorption occurs (the "K-edge").</p>
+      
+      <div style="background: #f8fafc; border-left: 4px solid #4a6491; padding: 1.25rem; margin: 1.5rem 0; border-radius: 4px;">
+        <h3>Linear Combination Fitting (LCF) Strategy</h3>
+        <p>Raw curves from the beamline don't automatically state what molecules are present. To figure it out, our team will use software to run Linear Combination Fitting. We mix different percentages of mathematically pristine "Reference Standards" together until they match our experimental biochar curve perfectly.</p>
+      </div>
+
+      <h2>Our Core Chemical Benchmarks</h2>
+      <p>To differentiate safe mineral salts from dangerous pollutants, our data will be actively weighed against these specific material signatures found in our literature reviews:</p>
+      
+      <table style="width:100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.95rem;">
+        <thead>
+          <tr style="background: #2c3e50; color: white; text-align: left;">
+            <th style="padding: 10px; border: 1px solid #ccd1d9;">Reference Standard Group</th>
+            <th style="padding: 10px; border: 1px solid #ccd1d9;">What it Represents in our Biochar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ccd1d9;"><strong>Inorganic Chlorides</strong> (NaCl, KCl, CuCl₂)</td>
+            <td style="padding: 10px; border: 1px solid #ccd1d9;">Indicates chlorine safely stabilized as benign mineral crystals within the wood ash.</td>
+          </tr>
+          <tr style="background: #fdfdfd;">
+            <td style="padding: 10px; border: 1px solid #ccd1d9;"><strong>Aliphatic Organochlorines</strong> (Raw PVC Overlays)</td>
+            <td style="padding: 10px; border: 1px solid #ccd1d9;">Indicates original plastic polymers failed to completely crack or pyrolyze during the furnace run.</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ccd1d9;"><strong>Aromatic Organochlorines</strong> (Chlorobenzene / Organohalogens)</td>
+            <td style="padding: 10px; border: 1px solid #ccd1d9;">Indicates a hazardous outcome: chlorine chemically bound into stable, toxic carbon-ring structures.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top: 3rem;"><a href="sotb.html" style="color:var(--accent); text-decoration:none; font-weight:bold;">← Close Tab or Return to Hub</a></p>
+    </div>
+  </main>
+</body>
+</html>
