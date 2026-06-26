@@ -10,45 +10,120 @@
 <body>
   <section class="section-header">
     <div class="container">
-      <h1>Data Processing & Spectral Fingerprinting</h1>
-      <p class="muted">How we decode molecular structures using X-ray Absorption Near-Edge Structure (XANES).</p>
+      <h1>Data Processing & Spectroscopic Tracking</h1>
+      <p class="muted">Quantifying transitional metal oxidation variants and spatial distributions.</p>
     </div>
   </section>
+
   <main class="container section-page">
     <div class="section-content" style="display:block;">
-      <h2>Understanding the Chlorine K-edge Spectrum</h2>
-      <p>When our biochar samples are placed inside the synchrotron experimental chamber, we shoot soft X-ray light at them, stepping the energy from roughly 2.81 keV up through 2.85 keV. As the energy hits the binding threshold of core Chlorine electrons, a sharp jump in absorption occurs (the "K-edge").</p>
       
-      <div style="background: #f8fafc; border-left: 4px solid #4a6491; padding: 1.25rem; margin: 1.5rem 0; border-radius: 4px;">
-        <h3>Linear Combination Fitting (LCF) Strategy</h3>
-        <p>Raw curves from the beamline don't automatically state what molecules are present. To figure it out, our team will use software to run Linear Combination Fitting. We mix different percentages of mathematically pristine "Reference Standards" together until they match our experimental biochar curve perfectly.</p>
+      <!-- NAVIGATION SUB-TABS TO EASILY BROWSE DATA SECTIONS -->
+      <div style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 2px solid #ccd1d9; padding-bottom: 0.5rem;">
+        <a href="#xrf" style="color: var(--accent); text-decoration: none; font-weight: bold;">1. XRF Mapping</a>
+        <a href="#xanes" style="color: var(--accent); text-decoration: none; font-weight: bold;">2. XANES Spectroscopy</a>
+        <a href="#fenton" style="color: var(--accent); text-decoration: none; font-weight: bold;">3. Environmental Mechanics</a>
+        <a href="#complementary" style="color: var(--accent); text-decoration: none; font-weight: bold;">4. Complementary Core Data</a>
       </div>
 
-      <h2>Our Core Chemical Benchmarks</h2>
-      <p>To differentiate safe mineral salts from dangerous pollutants, our data will be actively weighed against these specific material signatures found in our literature reviews:</p>
-      
-      <table style="width:100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.95rem;">
-        <thead>
-          <tr style="background: #2c3e50; color: white; text-align: left;">
-            <th style="padding: 10px; border: 1px solid #ccd1d9;">Reference Standard Group</th>
-            <th style="padding: 10px; border: 1px solid #ccd1d9;">What it Represents in our Biochar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ccd1d9;"><strong>Inorganic Chlorides</strong> (NaCl, KCl, CuCl₂)</td>
-            <td style="padding: 10px; border: 1px solid #ccd1d9;">Indicates chlorine safely stabilized as benign mineral crystals within the wood ash.</td>
-          </tr>
-          <tr style="background: #fdfdfd;">
-            <td style="padding: 10px; border: 1px solid #ccd1d9;"><strong>Aliphatic Organochlorines</strong> (Raw PVC Overlays)</td>
-            <td style="padding: 10px; border: 1px solid #ccd1d9;">Indicates original plastic polymers failed to completely crack or pyrolyze during the furnace run.</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ccd1d9;"><strong>Aromatic Organochlorines</strong> (Chlorobenzene / Organohalogens)</td>
-            <td style="padding: 10px; border: 1px solid #ccd1d9;">Indicates a hazardous outcome: chlorine chemically bound into stable, toxic carbon-ring structures.</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- SECTION 1: X-RAY FLUORESCENCE (XRF) -->
+      <section id="xrf" style="margin-bottom: 4rem;">
+        <h2>1. X-Ray Fluorescence (XRF) Elemental Mapping</h2>
+        <p>Before executing focused spot scans, micro-XRF elemental mapping is performed at the beamline to isolate the spatial co-localization of trace $\text{Fe}$ and $\text{Mn}$ matrices distributed throughout the heterogenous conifer biochar structures.</p>
+        
+        <div style="background:#f4f6f9; border:1px dashed #ccd1d9; border-radius:6px; text-align:center; padding:4rem 2rem; margin: 1.5rem 0;">
+          <span style="font-size: 3rem;">🗺️</span>
+          <h3 style="margin-top:1rem; color:#656d78;">Micro-XRF Co-Localization Plot Placeholder</h3>
+          <p style="font-size: 0.85rem;" class="muted">[File Target: xrf-mapping-matrix.png — Displays multi-element RGB overlay of iron and manganese hotspots]</p>
+        </div>
+      </section>
+
+      <!-- SECTION 2: XANES SPECTROSCOPY & SAMPLES -->
+      <section id="xanes" style="margin-bottom: 4rem;">
+        <h2>2. XANES Edge Spectroscopy & LCF Modelling</h2>
+        <p>By bringing our processed chars to the synchrotron, we isolate the <strong>Iron K-edge (~7.11 keV)</strong> and <strong>Manganese K-edge (~6.54 keV)</strong> thresholds to monitor electronic state configurations. Linear Combination Fitting (LCF) reconstructs these absorption signatures using pristine reference parameters.</p>
+
+        <div style="background:#f4f6f9; border:1px dashed #ccd1d9; border-radius:6px; text-align:center; padding:4rem 2rem; margin: 1.5rem 0;">
+          <span style="font-size: 3rem;">📈</span>
+          <h3 style="margin-top:1rem; color:#656d78;">Normalized XANES K-Edge Spectrum Graph Placeholder</h3>
+          <p style="font-size: 0.85rem;" class="muted">[File Target: xanes-spectra-lcf.png — Plots energy (eV) vs normalized absorption with model fits]</p>
+        </div>
+
+        <h3>Sample Coordinate Evaluation Framework</h3>
+        <table style="width:100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.95rem;">
+          <thead>
+            <tr style="background: #2c3e50; color: white; text-align: left;">
+              <th style="padding: 10px; border: 1px solid #ccd1d9; width: 15%;">Sample ID</th>
+              <th style="padding: 10px; border: 1px solid #ccd1d9; width: 25%;">Predicted Fe Phase</th>
+              <th style="padding: 10px; border: 1px solid #ccd1d9; width: 25%;">Predicted Mn Phase</th>
+              <th style="padding: 10px; border: 1px solid #ccd1d9;">Key Prediction / Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>MWP250</strong></td>
+              <td>$\text{Fe}^{3+}$ ferrihydrite-like</td>
+              <td>$\text{Mn}^{2+}$ organic complexes</td>
+              <td>Baseline profile; no significant carbothermal path observed.</td>
+            </tr>
+            <tr style="background: #fdfdfd;">
+              <td><strong>MWP400</strong></td>
+              <td>$\text{Fe}^{3+}$ dominant / early magnetite</td>
+              <td>$\text{Mn}^{2+}$ inorganic oxides</td>
+              <td>Microwave localized hot-spot structural partial reduction.</td>
+            </tr>
+            <tr>
+              <td><strong>CWRB</strong></td>
+              <td>Mixed $\text{Fe}^{2+}/\text{Fe}^{3+}$ magnetite</td>
+              <td>$\text{Mn}^{2+}$ oxides</td>
+              <td>Carbothermal reduction initiates below standard $570^\circ\text{C}$ thresholds.</td>
+            </tr>
+            <tr style="background: #fdfdfd;">
+              <td><strong>CSAB</strong></td>
+              <td>Complex variable phases</td>
+              <td>$\text{Mn}^{2+}$ (steam-resistant)</td>
+              <td>Primary novelty marker; evaluating competitive steam vs carbon interactions.</td>
+            </tr>
+            <tr>
+              <td><strong>CFA</strong></td>
+              <td>$\text{Fe}^{3+}$ in aluminosilicate glass</td>
+              <td>$\text{Mn}^{2+}/\text{Mn}^{3+}$ higher valence</td>
+              <td>Oxidizing combustion conditions override temperature parameters.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- SECTION 3: ENVIRONMENTAL KINETICS & MECHANISMS -->
+      <section id="fenton" style="margin-bottom: 4rem;">
+        <h2>3. Environmental Mechanics & Radical Activation Pathways</h2>
+        <p>Understanding the exact oxidation ratios of these metals allows us to safely deploy our chars in water treatment and agricultural contexts. For instance, a high concentration of localized $\text{Fe}^{2+}$ enables the initiation of advanced Fenton radical chain reactions when interacting with peroxides in an aqueous environment:</p>
+        
+        <div style="background: rgba(74, 100, 145, 0.05); padding: 1.5rem; border-left: 4px solid var(--accent); border-radius: 4px; margin: 1.5rem 0; font-family: monospace;">
+          <p style="margin: 0 0 0.5rem 0; font-weight: bold;">Fenton Reaction Cascade:</p>
+          $$\text{Fe}^{2+} + \text{H}_2\text{O}_2 \rightarrow \text{Fe}^{3+} + \bullet\text{OH} + \text{OH}^-$$
+          <p style="margin: 0.5rem 0;"></p>
+          $$\text{Fe}^{3+} + \text{H}_2\text{O}_2 \rightarrow \text{Fe}^{2+} + \text{HO}_2\bullet + \text{H}^+$$
+        </div>
+        <p class="muted" style="font-size: 0.9rem;">By establishing the exact valency distribution via XANES, we can accurately predict how efficiently these radicals will deploy to tear down environmental pollutants.</p>
+      </section>
+
+      <!-- SECTION 4: COMPLEMENTARY CORE DATA -->
+      <section id="complementary" style="margin-bottom: 4rem;">
+        <h2>4. Complementary Structural Data</h2>
+        <p>To fully validate our **carbon-mineral electronic coupling hypothesis**, our XANES oxidation datasets will be actively paired against metrics assessing the structural order of the surrounding carbon skeleton.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+          <div style="background:#fff; border: 1px solid #ccd1d9; padding: 1.5rem; border-radius: 6px;">
+            <h4 style="margin:0 0 0.5rem 0; color:var(--accent);">Raman Spectroscopy Metrics</h4>
+            <p style="font-size: 0.85rem; margin:0;" class="muted">Tracking the $\text{D}/\text{G}$ band ratio to confirm carbon aromatic ring graphitization and its direct behavior as an electron donor matrix.</p>
+          </div>
+          <div style="background:#fff; border: 1px solid #ccd1d9; padding: 1.5rem; border-radius: 6px;">
+            <h4 style="margin:0 0 0.5rem 0; color:var(--accent);">Bulk Physical Properties</h4>
+            <p style="font-size: 0.85rem; margin:0;" class="muted">Logging solid char yield percentages, ash retention values, and moisture variations derived from the core processing logs.</p>
+          </div>
+        </div>
+      </section>
 
       <p style="margin-top: 3rem;"><a href="sotb.html" style="color:var(--accent); text-decoration:none; font-weight:bold;">← Close Tab or Return to Hub</a></p>
     </div>
