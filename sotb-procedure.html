@@ -6,25 +6,57 @@
   <title>Procedure — SotB Research</title>
   <link rel="icon" type="image/jpeg" href="favicon.jpg" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/MathJax.js"></script>
 </head>
 <body>
   <section class="section-header">
     <div class="container">
-      <h1>Experimental Laboratory Procedure</h1>
-      <p class="muted">Detailed protocol for sample preparation and hazardous gas mitigation.</p>
+      <h1>Experimental Synthesis Procedure</h1>
+      <p class="muted">Standardized protocols for BC conifer waste conditioning and multi-mode pyrolysis execution.</p>
     </div>
   </section>
+
   <main class="container section-page">
     <div class="section-content" style="display:block;">
-      <h2>Pyrolysis Mechanics & Safety Constraints</h2>
-      <p>To safely capture clean solid biochars from composite samples without introducing oxygen anomalies, our club implements the following rigorous framework:</p>
-      <ol style="line-height: 1.8; margin-top:1rem; padding-left: 1.2rem;">
-        <li><strong>Inert Purging:</strong> Samples are loaded into a ceramic or stainless boat within the tube furnace. An initial continuous flow of Nitrogen (N₂) at 1–2 L/min runs for several minutes to fully sweep atmospheric oxygen out.</li>
-        <li><strong>Thermal Progression:</strong> The furnace runs an automated program ascending at ~10°C/min up to a final 500°C target window. It holds this boundary for 30–60 minutes to eliminate volatile organic matrices completely.</li>
-        <li><strong>Downstream Effluent Capture:</strong> Corrosive volatile fractions—specifically Hydrogen Chloride (HCl) gas—are forced down-tube through a safe, aqueous gas-washing system loaded with a 2% Sodium Hydroxide (NaOH) alkaline neutralization wash.</li>
-        <li><strong>Sealing Process:</strong> Chars stay under continuous inert gas flow until cooling below 100°C before extraction to block environmental contamination.</li>
-      </ol>
-      <p style="margin-top: 2rem;"><a href="sotb.html" style="color:var(--accent); text-decoration:none; font-weight:bold;">← Close Tab or Return to Hub</a></p>
+      
+      <h2>1. Feedstock Biomass Preparation</h2>
+      <p>To accurately map trace Iron (\(\text{Fe}\)) and Manganese (\(\text{Mn}\)) baselines, processing starts with uniform material control guidelines:</p>
+      <ul style="line-height: 1.8; margin-bottom: 2rem; padding-left: 1.2rem;">
+        <li><strong>Sourcing:</strong> Residual raw logging slash waste from British Columbia conifer profiles—primarily a localized matrix mixture of Douglas-fir, Western Hemlock, and Western Red Cedar.</li>
+        <li><strong>Milling & Seeding:</strong> Biomass samples are mechanically chipped, oven-dried at \(105^\circ\text{C}\) for 24 hours to eliminate extraneous moisture variables, and sieved into uniform particle cohorts.</li>
+      </ul>
+
+      <h2>2. Pyrolysis Processing Pathways</h2>
+      <p>Our team utilizes two distinct thermodynamic processing arrays to observe how structural carbon matrix changes impact metal reduction behaviors:</p>
+
+      <div style="background: #f8fafc; border-left: 4px solid #4a6491; padding: 1.25rem; margin: 1.5rem 0; border-radius: 4px;">
+        <h3>Pathway A: Microwave-Assisted Pyrolysis (MWP Series)</h3>
+        <p>Samples are subjected to localized, high-dielectric microwave energy excitation fields. This creates rapid internal thermal hot-spots that force distinct volatile evolution pathways:</p>
+        <ol style="padding-left: 1.2rem; margin-top: 0.5rem;">
+          <li>Weigh precisely \(\sim10\text{–}50\text{ g}\) of prepared conifer residue into an unreactive, high-temperature quartz reaction vessel.</li>
+          <li>Seal the chamber and initiate an active inert gas sweep utilizing an ultra-pure Nitrogen (\(\text{N}_2\)) purge at a flow rate of \(1.5\text{ L/min}\) to ensure an oxygen-free processing zone.</li>
+          <li>Program the microwave field engine to scale progressively up to designated localized temperature holds: **250°C** (for the baseline \(MWP250\) series) or **400°C** (for the intermediate \(MWP400\) series). Maintain peak target limits for 30 minutes.</li>
+        </ol>
+      </div>
+
+      <div style="background: #f8fafc; border-left: 4px solid #2c3e50; padding: 1.25rem; margin: 1.5rem 0; border-radius: 4px;">
+        <h3>Pathway B: Conventional Controlled Pyrolysis (CWRB & CSAB Controls)</h3>
+        <p>To evaluate traditional thermal behaviors, samples are processed via standard external heating methods inside a quartz tube furnace environment:</p>
+        <ol style="padding-left: 1.2rem; margin-top: 0.5rem;">
+          <li>Position the feedstock inside a ceramic boat slider positioned in the center of the furnace hot zone.</li>
+          <li>Establish an ongoing nitrogen atmosphere configuration to fully stabilize the volatile sweep path.</li>
+          <li><strong>For CWRB:</strong> Ramp the system elements at a fixed rate of \(\sim10^\circ\text{C/min}\) up to a target boundary of **550°C** to track carbothermal interactions near the classic thermodynamic line.</li>
+          <li><strong>For CSAB:</strong> Following initial slow pyrolysis, scale the heating arrays to **900°C** while introducing a secondary fluidizing stream of superheated steam to monitor competitive matrix gasification pathways.</li>
+        </ol>
+      </div>
+
+      <h2>3. Post-Run Preservation Protocols</h2>
+      <p>Because highly porous biochars can undergo rapid surface oxidation when exposed to open air while hot, the nitrogen gas loop remains completely active post-run. Solid samples are cooled below \(60^\circ\text{C}\) before extraction, then sealed in airtight amber vials to preserve their atomic-level metal oxidation states for synchrotron testing.</p>
+
+      <p style="margin-top: 3rem; border-top: 1px solid #e6e9ed; padding-top: 1.5rem;">
+        <a href="sotb.html" style="color:#4a6491; text-decoration:none; font-weight:bold;">← Close Tab or Return to Hub Directory</a>
+      </p>
     </div>
   </main>
 </body>
